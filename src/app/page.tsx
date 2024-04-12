@@ -1,4 +1,4 @@
-import { GridBackground } from "@/components/aceternity/grid-bg";
+import Hero from "@/components/pages/hero";
 import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
@@ -6,11 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <div>
-        <GridBackground
-          className="font-stretch"
-          title="Kabir Bose"
-          para="Software Dev & Cybersecurity"
-        />
+        <Hero />
       </div>
     </>
   );
