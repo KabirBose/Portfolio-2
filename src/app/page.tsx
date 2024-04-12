@@ -1,5 +1,5 @@
-import Image from "next/image";
+import { GridBackground } from "@/components/aceternity/grid-bg";
 
 export default function Home() {
-  return <div>Hello world</div>;
+  return <GridBackground className="font-stretch" text="KABIR BOSE" />;
 }

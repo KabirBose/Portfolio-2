@@ -2,9 +2,19 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import { Work_Sans, Space_Mono } from "next/font/google";
+import StretchPro from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const work_sans = Work_Sans({ subsets: ["latin"] });
+const space_mono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-space-mono",
+});
+const stretch_pro = StretchPro({
+  src: "../fonts/StretchPro.otf",
+  variable: "--font-stretch-pro",
+});
 
 export const metadata: Metadata = {
   title: "Kabir's Portfolio",
@@ -18,7 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${work_sans.className} ${stretch_pro.variable} ${space_mono.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
