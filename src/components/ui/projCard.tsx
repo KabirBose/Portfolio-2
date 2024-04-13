@@ -6,17 +6,26 @@ interface Props {
   title: string;
   desc: string;
   href: string;
+  imgPosition?: string;
 }
 
-export default function ProjCard({ imgSrc, title, desc, href }: Props) {
+export default function ProjCard({
+  imgSrc,
+  title,
+  desc,
+  href,
+  imgPosition,
+}: Props) {
   return (
-    <div className="mt-2 bg-zinc-900 rounded-md">
+    <div className="bg-zinc-900 rounded-md border-2 border-zinc-800">
       <Image
         src={imgSrc}
         alt="Project"
         width={1000}
         height={1000}
-        className="w-full rounded-t-md"
+        className={`w-full h-[15rem] object-cover rounded-t-md ${
+          !imgPosition || imgPosition === "" ? "object-center" : imgPosition
+        }`}
       />
       <div className="p-6 pb-8 min-h-[10rem] flex justify-start items-start flex-col gap-4">
         <h3 className="font-semibold text-xl text-green-500">{title}</h3>
