@@ -43,7 +43,6 @@ export default function Navbar() {
           <button>ABOUT</button>
           <button>SKILLS</button>
           <button>CERTIFICATIONS</button>
-          <button>PROJECTS</button>
           <button>CONTACT</button>
         </motion.div>
       </AnimatePresence>

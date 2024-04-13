@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2">
-      <h1 className="font-space text-2xl font-bold">ABOUT ME</h1>
+      <h1 className="text-green-500 font-space text-2xl font-bold">ABOUT ME</h1>
       <p>
         I'm a student at Ontario Tech University studying Networking & IT
         Security (Hons).

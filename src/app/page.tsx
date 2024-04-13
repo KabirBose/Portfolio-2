@@ -4,6 +4,7 @@ import Hero from "@/components/pages/hero";
 import About from "@/components/pages/about";
 import Skills from "@/components/pages/skills";
 import Certifications from "@/components/pages/certifications";
+import Contact from "@/components/pages/contact";
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
         <About />
         <Skills />
         <Certifications />
+        <Contact />
       </div>
     </>
   );

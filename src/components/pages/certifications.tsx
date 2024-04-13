@@ -3,9 +3,11 @@ import CertCard from "../ui/certCard";
 export default function Certifications() {
   return (
     <div className="min-h-[80vh] p-8 flex justify-center items-center flex-col gap-2">
-      <h1 className="font-space text-2xl font-bold">CERTIFICATIONS</h1>
+      <h1 className="font-space text-2xl font-bold text-green-500">
+        CERTIFICATIONS
+      </h1>
       <p className="text-center">
-        Here are my certifications! Note: some of them don't have links.
+        Here are my certifications! Note: some of them don't have credentials.
       </p>
       <div className="flex flex-col justify-center items-center gap-4">
         <CertCard

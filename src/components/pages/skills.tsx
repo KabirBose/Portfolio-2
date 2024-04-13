@@ -1,10 +1,9 @@
-import Image from "next/image";
 import SkillIcon from "../ui/skillIcon";
 
 export default function Skills() {
   return (
     <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2">
-      <h1 className="font-space text-2xl font-bold">SKILLS</h1>
+      <h1 className="font-space text-2xl font-bold text-green-500">SKILLS</h1>
       <p>Here's what I know so far!</p>
 
       <div className="flex justify-center md:justify-between items-center flex-wrap gap-5 p-5">
