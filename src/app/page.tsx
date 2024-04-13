@@ -5,6 +5,7 @@ import About from "@/components/pages/about";
 import Skills from "@/components/pages/skills";
 import Certifications from "@/components/pages/certifications";
 import Contact from "@/components/pages/contact";
+import Projects from "@/components/pages/projects";
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
         <About />
         <Skills />
         <Certifications />
+        <Projects />
         <Contact />
       </div>
     </>
