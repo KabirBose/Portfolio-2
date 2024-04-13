@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-50 font-space flex flex-col w-full">
       <motion.nav
-        className="backdrop-blur-md w-full p-5 text-center"
+        className="backdrop-blur-xl w-full p-5 text-center"
         animate={{ opacity: [0, 1], y: [-20, 0] }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
@@ -29,7 +29,7 @@ export default function Navbar() {
 
       <AnimatePresence>
         <motion.div
-          className={`flex-col h-screen w-full backdrop-blur-sm justify-start items-end gap-10 p-10 text-2xl`}
+          className={`flex-col h-screen w-full backdrop-blur-xl justify-start items-end gap-10 p-10 text-2xl`}
           variants={{
             initial: { opacity: 0, display: "none" },
             open: { opacity: 1, display: "flex", x: [20, 0] },
