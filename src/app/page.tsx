@@ -1,12 +1,15 @@
-import Hero from "@/components/pages/hero";
 import Navbar from "@/components/ui/navbar";
 
-export default function Home() {
+import Hero from "@/components/pages/hero";
+import About from "@/components/pages/about";
+
+export default function Main() {
   return (
     <>
       <Navbar />
       <div>
         <Hero />
+        <About />
       </div>
     </>
   );
