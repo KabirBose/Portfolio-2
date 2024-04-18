@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import { useState, useContext } from "react";
 import { NavContext } from "@/contexts/navContext";
 
@@ -35,52 +35,52 @@ export default function Navbar() {
         </button>
       </motion.nav>
 
-      <AnimatePresence>
-        <motion.div
-          className={`flex-col h-screen w-full backdrop-blur-xl justify-start items-end gap-10 p-10 text-2xl`}
-          variants={{
-            initial: { opacity: 0, display: "none" },
-            open: { opacity: 1, display: "flex", x: [20, 0] },
-            close: { opacity: 0, display: "none", x: [0, 20] },
+      <motion.div
+        className={`flex flex-col h-screen w-full backdrop-blur-xl justify-start items-end gap-10 p-10 text-2xl ${
+          !navState && "hidden"
+        }`}
+        variants={{
+          initial: { opacity: 0 },
+          open: { opacity: 1, x: [20, 0] },
+          close: { opacity: 0, x: [0, 20] },
+        }}
+        initial="initial"
+        animate={navbarHandler}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        onClick={() => setNavState(!navState)}
+      >
+        <button
+          onClick={() => {
+            aboutRef.current?.scrollIntoView(options);
           }}
-          initial="initial"
-          exit="close"
-          animate={navbarHandler}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <button
-            onClick={() => {
-              aboutRef.current?.scrollIntoView(options);
-            }}
-          >
-            ABOUT
-          </button>
-          <button onClick={() => skillsRef.current?.scrollIntoView(options)}>
-            SKILLS
-          </button>
-          <button
-            onClick={() => {
-              certsRef.current?.scrollIntoView(options);
-            }}
-          >
-            CERTIFICATIONS
-          </button>
-          <button
-            onClick={() => {
-              projectsRef.current?.scrollIntoView(options);
-            }}
-          >
-            PROJECTS
-          </button>
-          <button
-            onClick={() => {
-              contactRef.current?.scrollIntoView(options);
-            }}
-          >
-            CONTACT
-          </button>
-        </motion.div>
-      </AnimatePresence>
+          ABOUT
+        </button>
+        <button onClick={() => skillsRef.current?.scrollIntoView(options)}>
+          SKILLS
+        </button>
+        <button
+          onClick={() => {
+            certsRef.current?.scrollIntoView(options);
+          }}
+        >
+          CERTIFICATIONS
+        </button>
+        <button
+          onClick={() => {
+            projectsRef.current?.scrollIntoView(options);
+          }}
+        >
+          PROJECTS
+        </button>
+        <button
+          onClick={() => {
+            contactRef.current?.scrollIntoView(options);
+          }}
+        >
+          CONTACT
+        </button>
+      </motion.div>
     </div>
   );
 }

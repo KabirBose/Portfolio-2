@@ -31,7 +31,7 @@ export default function CertCard({
           cred === "" || !cred ? "hidden" : "visible"
         }`}
       >
-        <Link className="text-lg" target="_blank" href={cred || ""}>
+        <Link className="md:text-lg" target="_blank" href={cred || ""}>
           View Credential
         </Link>
       </div>
