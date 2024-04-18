@@ -2,7 +2,7 @@ import ProjCard from "../ui/projCard";
 
 export default function Projects() {
   return (
-    <div className="min-h-[80vh] p-8 flex justify-center items-center text-center flex-col gap-3">
+    <div className="min-h-[80vh] p-8 flex justify-center items-center text-center flex-col gap-3 bg-[url('/backgrounds/mesh-gradient-1.png')] bg-center object-cover">
       <h1 className="text-green-500 font-space text-2xl md:text-3xl font-bold">
         PROJECTS
       </h1>

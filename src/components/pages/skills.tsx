@@ -2,7 +2,7 @@ import SkillIcon from "../ui/skillIcon";
 
 export default function Skills() {
   return (
-    <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2 md:gap-5">
+    <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2 md:gap-5 bg-[url('/backgrounds/mesh-gradient-1.png')] bg-center object-cover">
       <h1 className="font-space text-2xl md:text-3xl font-bold text-green-500">
         SKILLS
       </h1>

@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
   return (
-    <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2 md:gap-6">
+    <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2 md:gap-6 bg-[url('/backgrounds/mesh-gradient-1.png')] bg-center object-cover">
       <h1 className="text-green-500 font-space text-2xl md:text-3xl font-bold">
         CONTACT
       </h1>

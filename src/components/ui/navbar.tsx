@@ -55,7 +55,7 @@ export default function Navbar() {
           >
             ABOUT
           </button>
-          <button onClick={() => skillsRef.current?.scrollIntoView()}>
+          <button onClick={() => skillsRef.current?.scrollIntoView(options)}>
             SKILLS
           </button>
           <button

@@ -2,7 +2,7 @@ import CertCard from "../ui/certCard";
 
 export default function Certifications() {
   return (
-    <div className="min-h-[80vh] p-8 flex justify-center items-center flex-col gap-3">
+    <div className="min-h-[80vh] p-8 flex justify-center items-center flex-col gap-3 bg-[url('/backgrounds/mesh-gradient-1.png')] bg-center object-cover">
       <h1 className="font-space text-2xl md:text-3xl font-bold text-green-500">
         CERTIFICATIONS
       </h1>
