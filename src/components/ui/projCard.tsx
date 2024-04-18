@@ -30,7 +30,11 @@ export default function ProjCard({
       <div className="p-6 pb-8 min-h-[10rem] flex justify-start items-start flex-col gap-4">
         <h3 className="font-semibold text-xl text-green-500">{title}</h3>
         <p className="text-start">{desc}</p>
-        <Link href={href} className="bg-zinc-800 p-2 rounded-md">
+        <Link
+          target="_blank"
+          href={href}
+          className="bg-zinc-800 p-2 rounded-md"
+        >
           View on GitHub
         </Link>
       </div>

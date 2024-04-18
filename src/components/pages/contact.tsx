@@ -12,7 +12,7 @@ export default function Contact() {
         <p>You can check out my projects or contact me if you'd like!</p>
 
         <div className="mt-5 flex justify-center items-center gap-12">
-          <Link href={"/"}>
+          <Link href={"mailto:kabirbose04@gmail.com"}>
             <FontAwesomeIcon
               color="#22C55E"
               className="w-[2rem] h-[2rem]"
@@ -20,7 +20,7 @@ export default function Contact() {
             />
           </Link>
 
-          <Link href={"/"}>
+          <Link href={"https://github.com/KabirBose"}>
             <FontAwesomeIcon
               color="#22C55E"
               className="w-[2rem] h-[2rem]"
@@ -28,7 +28,7 @@ export default function Contact() {
             />
           </Link>
 
-          <Link href={"/"}>
+          <Link href={"https://www.linkedin.com/in/kabirbose/"}>
             <FontAwesomeIcon
               color="#22C55E"
               className="w-[2rem] h-[2rem]"
