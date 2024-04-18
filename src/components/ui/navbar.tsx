@@ -1,11 +1,17 @@
 "use client";
 
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { NavContext } from "@/contexts/navContext";
 
 export default function Navbar() {
   const [navState, setNavState] = useState(false);
   const navbarHandler = useAnimationControls();
+
+  const { aboutRef, skillsRef, certsRef, projectsRef, contactRef } =
+    useContext(NavContext);
+
+  const options = { behavior: "smooth" };
 
   const navStateHandler = () => {
     setNavState(!navState);
@@ -42,10 +48,37 @@ export default function Navbar() {
           animate={navbarHandler}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <button>ABOUT</button>
-          <button>SKILLS</button>
-          <button>CERTIFICATIONS</button>
-          <button>CONTACT</button>
+          <button
+            onClick={() => {
+              aboutRef.current?.scrollIntoView(options);
+            }}
+          >
+            ABOUT
+          </button>
+          <button onClick={() => skillsRef.current?.scrollIntoView()}>
+            SKILLS
+          </button>
+          <button
+            onClick={() => {
+              certsRef.current?.scrollIntoView(options);
+            }}
+          >
+            CERTIFICATIONS
+          </button>
+          <button
+            onClick={() => {
+              projectsRef.current?.scrollIntoView(options);
+            }}
+          >
+            PROJECTS
+          </button>
+          <button
+            onClick={() => {
+              contactRef.current?.scrollIntoView(options);
+            }}
+          >
+            CONTACT
+          </button>
         </motion.div>
       </AnimatePresence>
     </div>
