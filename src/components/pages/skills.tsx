@@ -2,11 +2,13 @@ import SkillIcon from "../ui/skillIcon";
 
 export default function Skills() {
   return (
-    <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2">
-      <h1 className="font-space text-2xl font-bold text-green-500">SKILLS</h1>
-      <p>Here's what I know so far!</p>
+    <div className="min-h-[80vh] p-4 flex justify-center items-center text-center flex-col gap-2 md:gap-5">
+      <h1 className="font-space text-2xl md:text-3xl font-bold text-green-500">
+        SKILLS
+      </h1>
+      <p className="md:text-lg">Here's what I know so far!</p>
 
-      <div className="flex justify-center md:justify-between items-center flex-wrap gap-5 p-5">
+      <div className="flex justify-center items-center flex-wrap gap-5 md:gap-12 p-5">
         <SkillIcon imageSrc="angular" title="Angular" />
         <SkillIcon imageSrc="bootstrap" title="BootStrap" />
         <SkillIcon imageSrc="bunjs" title="Bun" />

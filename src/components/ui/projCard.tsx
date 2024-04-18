@@ -17,7 +17,7 @@ export default function ProjCard({
   imgPosition,
 }: Props) {
   return (
-    <div className="bg-zinc-900 rounded-md border-2 border-zinc-800">
+    <div className="bg-zinc-900 rounded-md border-2 border-zinc-800 md:w-[45%] lg:w-[30%] md:min-h-[35rem] lg:min-h-[37rem]">
       <Image
         src={imgSrc}
         alt="Project"
@@ -33,7 +33,7 @@ export default function ProjCard({
         <Link
           target="_blank"
           href={href}
-          className="bg-zinc-800 p-2 rounded-md"
+          className="bg-zinc-800 p-2 rounded-md md:mt-2"
         >
           View on GitHub
         </Link>

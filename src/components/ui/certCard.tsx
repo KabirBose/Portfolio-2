@@ -5,14 +5,25 @@ interface Props {
   author: string;
   desc: string;
   cred?: string;
+  className?: string;
 }
 
-export default function CertCard({ title, author, desc, cred }: Props) {
+export default function CertCard({
+  title,
+  author,
+  desc,
+  cred,
+  className,
+}: Props) {
   return (
-    <div className="flex justify-start items-start flex-col bg-zinc-900 w-full min-h-[20rem] mt-2 rounded-md p-7 border-2 border-zinc-800">
-      <h3 className="text-xl font-semibold text-green-500">{title}</h3>
+    <div
+      className={`flex justify-start items-start flex-col bg-zinc-900 w-full md:w-[20rem] lg:w-[25rem] min-h-[20rem] mt-2 rounded-md p-7 border-2 border-zinc-800 ${className}`}
+    >
+      <h3 className="text-xl md:text-xl font-semibold text-green-500">
+        {title}
+      </h3>
       <h3>{author.toUpperCase()}</h3>
-      <p className="text-start mt-5">{desc}</p>
+      <p className="text-start mt-5 md:text-lg">{desc}</p>
 
       <br />
       <div
@@ -20,7 +31,7 @@ export default function CertCard({ title, author, desc, cred }: Props) {
           cred === "" || !cred ? "hidden" : "visible"
         }`}
       >
-        <Link target="_blank" href={cred || ""}>
+        <Link className="text-lg" target="_blank" href={cred || ""}>
           View Credential
         </Link>
       </div>

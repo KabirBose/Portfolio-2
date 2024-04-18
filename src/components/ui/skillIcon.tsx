@@ -12,11 +12,11 @@ export default function SkillIcon({ imageSrc, title, className }: Props) {
       <Image
         src={`/skills/${imageSrc}.png`}
         alt={title}
-        width={50}
-        height={50}
-        className={className}
+        width={1000}
+        height={1000}
+        className={`w-[50px] md:w-[60px] ${className}`}
       />
-      <p className="text-sm">{title}</p>
+      <p className="text-sm md:text-lg">{title}</p>
     </div>
   );
 }

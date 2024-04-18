@@ -24,7 +24,9 @@ export default function Navbar() {
         animate={{ opacity: [0, 1], y: [-20, 0] }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        <button onClick={navStateHandler}>MENU</button>
+        <button onClick={navStateHandler} className="md:text-lg">
+          MENU
+        </button>
       </motion.nav>
 
       <AnimatePresence>

@@ -2,11 +2,15 @@ import ProjCard from "../ui/projCard";
 
 export default function Projects() {
   return (
-    <div className="min-h-[80vh] p-8 flex justify-center items-center text-center flex-col gap-2">
-      <h1 className="text-green-500 font-space text-2xl font-bold">PROJECTS</h1>
-      <p>Check out some of my projects! The rest are on my GitHub.</p>
+    <div className="min-h-[80vh] p-8 flex justify-center items-center text-center flex-col gap-3">
+      <h1 className="text-green-500 font-space text-2xl md:text-3xl font-bold">
+        PROJECTS
+      </h1>
+      <p className="md:text-lg">
+        Check out some of my projects! The rest are on my GitHub.
+      </p>
 
-      <div className="mt-4 flex justify-center items-center flex-col gap-5">
+      <div className="mt-4 flex justify-center items-center flex-col md:flex-row md:flex-wrap gap-4 md:gap-8">
         <ProjCard
           title="Route Optimization"
           desc="Program that uses graph theory and Dijkstras 'Shortest Path'
