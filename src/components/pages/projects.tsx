@@ -10,7 +10,7 @@ export default function Projects() {
         Check out some of my projects! The rest are on my GitHub.
       </p>
 
-      <div className="mt-4 flex justify-center items-center flex-col md:flex-row md:flex-wrap gap-4 md:gap-8">
+      <div className="mt-6 flex justify-center items-center flex-col md:flex-row md:flex-wrap gap-4 md:gap-8">
         <ProjCard
           title="Route Optimization"
           desc="Program that uses graph theory and Dijkstras 'Shortest Path'

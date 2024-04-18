@@ -9,7 +9,7 @@ export default function Certifications() {
       <p className="text-center md:text-lg">
         Here are my certifications! Note: some of them don't have credentials.
       </p>
-      <div className="md:mt-4 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 md:gap-8">
+      <div className="md:mt-6 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 md:gap-12">
         <CertCard
           title="CS50P: Introduction to Programming with Python"
           author="David Malan & Harvard University"
@@ -48,6 +48,7 @@ export default function Certifications() {
           title="CCNAv7: Introduction to Networks"
           author="Cisco Networking Academy"
           desc="Cisco Packet Tracer, Wireshark, LAN Switching, WAN Routing, TCP/IP, DHCP, IPV4 & IPV6 Addressing"
+          className="md:w-[75%]"
         />
       </div>
     </div>
