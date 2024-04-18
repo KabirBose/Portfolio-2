@@ -6,6 +6,7 @@ import Skills from "@/components/pages/skills";
 import Certifications from "@/components/pages/certifications";
 import Contact from "@/components/pages/contact";
 import Projects from "@/components/pages/projects";
+import Footer from "@/components/ui/footer";
 
 export default function Main() {
   return (
@@ -18,6 +19,7 @@ export default function Main() {
         <Certifications />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </>
   );
