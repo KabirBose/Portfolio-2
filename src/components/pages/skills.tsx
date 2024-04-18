@@ -6,7 +6,7 @@ export default function Skills() {
       <h1 className="font-space text-2xl md:text-3xl font-bold text-green-500">
         SKILLS
       </h1>
-      <p className="md:text-lg">Here's what I know so far!</p>
+      <p className="md:text-lg">Here&aposs what I know so far!</p>
 
       <div className="flex justify-center items-center flex-wrap gap-5 md:gap-12 p-5">
         <SkillIcon imageSrc="angular" title="Angular" />

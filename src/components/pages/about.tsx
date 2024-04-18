@@ -5,7 +5,7 @@ export default function About() {
         ABOUT ME
       </h1>
       <p className="md:text-lg">
-        I'm a student at Ontario Tech University studying Networking & IT
+        I&aposm a student at Ontario Tech University studying Networking & IT
         Security (Hons).
         <br />
         <br />
@@ -13,7 +13,7 @@ export default function About() {
         engineering, and cybersecurity.
         <br />
         <br />
-        I love technology, whether it's building applications, creating
+        I love technology, whether it&aposs building applications, creating
         networks, or hacking stuff (legally of course)! I aspire to become a
         cybersecurity analyst one day, especially since I really enjoy working
         on the server-side.
