@@ -15,11 +15,11 @@ export default function Contact() {
           You can check out my projects or contact me if you'd like!
         </p>
 
-        <div className="mt-5 md:mt-8 flex justify-center items-center gap-12">
+        <div className="mt-5 md:mt-8 flex justify-center items-center gap-12 md:gap-16">
           <Link href={"mailto:kabirbose04@gmail.com"} target="_blank">
             <FontAwesomeIcon
               color="#22C55E"
-              className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
+              className="w-[2rem] h-[2rem] md:w-[2.3rem] md:h-[2.3rem]"
               icon={faEnvelope}
             />
           </Link>
@@ -27,7 +27,7 @@ export default function Contact() {
           <Link href={"https://github.com/KabirBose"} target="_blank">
             <FontAwesomeIcon
               color="#22C55E"
-              className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
+              className="w-[2rem] h-[2rem] md:w-[2.5rem] md:h-[2.5rem]"
               icon={faGithub}
             />
           </Link>
@@ -35,7 +35,7 @@ export default function Contact() {
           <Link href={"https://www.linkedin.com/in/kabirbose/"} target="_blank">
             <FontAwesomeIcon
               color="#22C55E"
-              className="w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem]"
+              className="w-[2rem] h-[2rem] md:w-[2.5rem] md:h-[2.5rem]"
               icon={faLinkedin}
             />
           </Link>

@@ -33,6 +33,7 @@ export default function Projects() {
           href="https://github.com/KabirBose/Caliper-Labs-SaaS-Agency"
           imgSrc="/projects/saas-agency.png"
           imgPosition="object-top"
+          className="md:w-[92%] md:min-h-[30rem]"
         />
       </div>
     </div>

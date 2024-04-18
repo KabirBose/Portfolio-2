@@ -48,7 +48,6 @@ export default function Certifications() {
           title="CCNAv7: Introduction to Networks"
           author="Cisco Networking Academy"
           desc="Cisco Packet Tracer, Wireshark, LAN Switching, WAN Routing, TCP/IP, DHCP, IPV4 & IPV6 Addressing"
-          className="md:w-[42rem] lg:w-[52rem]"
         />
       </div>
     </div>

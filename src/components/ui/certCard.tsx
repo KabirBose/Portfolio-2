@@ -17,7 +17,7 @@ export default function CertCard({
 }: Props) {
   return (
     <div
-      className={`flex justify-start items-start flex-col bg-zinc-900 w-full md:w-[20rem] lg:w-[25rem] min-h-[20rem] mt-2 rounded-md p-7 border-2 border-zinc-800 ${className}`}
+      className={`flex justify-start items-start flex-col bg-zinc-900 w-full md:w-[20rem] min-h-[21rem] mt-2 rounded-md p-7 border-2 border-zinc-800 ${className}`}
     >
       <h3 className="text-xl md:text-xl font-semibold text-green-500">
         {title}

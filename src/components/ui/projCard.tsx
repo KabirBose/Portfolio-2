@@ -7,6 +7,7 @@ interface Props {
   desc: string;
   href: string;
   imgPosition?: string;
+  className?: string;
 }
 
 export default function ProjCard({
@@ -15,9 +16,12 @@ export default function ProjCard({
   desc,
   href,
   imgPosition,
+  className,
 }: Props) {
   return (
-    <div className="bg-zinc-900 rounded-md border-2 border-zinc-800 md:w-[45%] lg:w-[30%] md:min-h-[35rem] lg:min-h-[37rem]">
+    <div
+      className={`bg-zinc-900 rounded-md border-2 border-zinc-800 md:w-[45%] md:min-h-[37rem] ${className}`}
+    >
       <Image
         src={imgSrc}
         alt="Project"
