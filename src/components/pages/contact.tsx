@@ -12,7 +12,7 @@ export default function Contact() {
       </h1>
       <div>
         <p className="md:text-lg">
-          You can check out my projects or contact me if you&aposd like!
+          {`You can check out my projects or contact me if you'd like!`}
         </p>
 
         <div className="mt-5 md:mt-8 flex justify-center items-center gap-12 md:gap-16">

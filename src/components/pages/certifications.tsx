@@ -7,8 +7,8 @@ export default function Certifications() {
         CERTIFICATIONS
       </h1>
       <p className="text-center md:text-lg">
-        Here are my certifications! Note: some of them don&apost have
-        credentials.
+        {`Here are my certifications! Note: some of them don't have
+        credentials.`}
       </p>
       <div className="md:mt-6 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 md:gap-12">
         <CertCard
