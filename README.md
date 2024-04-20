@@ -14,5 +14,7 @@ A website I made so you can learn a little bit more about me!
 
 # Setup
 You can view the website live here: https://kabirs-portfolio.vercel.app/
+
 OR
-Run the development server using `bun dev` or `npm run dev`
+
+Run the development server using `bun dev` or `npm run dev` and visiting [https](http://localhost:3000/)
