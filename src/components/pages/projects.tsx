@@ -28,11 +28,11 @@ export default function Projects() {
         />
 
         <ProjCard
-          title="SaaS Agency"
-          desc="Building my own SaaS agency that focuses on helping vehicle detailing and wrapping business gain more clients. My agency focuses on creating full-stack websites with SEO (Search Engine Optimization)."
-          href="https://github.com/KabirBose/Caliper-Labs-SaaS-Agency"
-          imgSrc="/projects/saas-agency.png"
-          imgPosition="object-top"
+          title="AI Flashcard Generator"
+          desc="An AI-powered flashcard generator developed using Node.js and C, along with the Google Gemini API. Users can easily generate detailed flashcards in seconds by uploading PDF files. The program runs locally on any device and stores all flashcard decks locally as well."
+          href="https://github.com/KabirBose/AI-Flashcard-Generator"
+          imgSrc="/projects/flashcard-generator.png"
+          // imgPosition="object-top"
           className="md:w-[92%] md:min-h-[30rem]"
         />
       </div>
