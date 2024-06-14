@@ -1,9 +1,11 @@
-# Kabir's Portfolio by Kabir Bose
+# Personal Portfolio
 
 # Purpose
+
 A website I made so you can learn a little bit more about me!
 
 # Languages & Frameworks Used
+
 - HTML
 - CSS
 - JavaScript
@@ -13,6 +15,7 @@ A website I made so you can learn a little bit more about me!
 - Tailwind CSS
 
 # Setup
+
 You can view the website live here: https://kabirs-portfolio.vercel.app/
 
 OR
