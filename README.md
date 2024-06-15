@@ -1,7 +1,5 @@
 # Personal Portfolio
 
-# Purpose
-
 A website I made so you can learn a little bit more about me!
 
 # Languages & Frameworks Used
@@ -14,7 +12,7 @@ A website I made so you can learn a little bit more about me!
 - ReactJS
 - Tailwind CSS
 
-# Setup
+# Usage
 
 You can view the website live here: https://kabirs-portfolio.vercel.app/
 
